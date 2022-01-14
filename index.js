@@ -247,13 +247,15 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(array) {
   const modern = []
   for (let i=0; i< array.length; i++){
-    if (array[i].years[1] === '9' && array[i].years[7] === '1') {
+    if (array[i].years.split(' ')[0] >= '1900' && array[i].years.split(' ')[2] < '2000') {
       modern.push(array[i].name)
     }
   }
   return modern
 }
-// console.log(get20s(artists))
+console.log(get20s(artists))
+
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -337,7 +339,7 @@ function artistInfo(array, name){
  }
  return artistBio
 }
-console.log(artistInfo(artists, 'Kazimir Malevich'))
+// console.log(artistInfo(artists, 'Kazimir Malevich'))
 
 
 
