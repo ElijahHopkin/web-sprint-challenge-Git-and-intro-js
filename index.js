@@ -253,7 +253,7 @@ function get20s(array) {
   }
   return modern
 }
-console.log(get20s(artists))
+// console.log(get20s(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -287,18 +287,19 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(array, id, name, years, genre, nationality, bio) {
- const another = {
-  id: id,
-  name: name, 
-  years: years,
-  genre: genre, 
-  nationality: nationality,
-  bio: bio
+function addArtist(array) {
+  const another = {
+   id: 20,
+   name: 'Elijah Hopkin',
+   years: '1986 - 2022',
+   genre: 'Web Design',
+   nationality: 'American',
+   bio: 'He is 35. He loves Chocolate.'
  }
- array.push(another)
+  array.push(another)
+  return array
 }
-console.log(addArtist(artists, 20, 'Elijah Hopkin', '1986-2022', 'Web Design', 'American', 'particularly fond of pigs in a blanket and painted in block art. Elijah switched careers when he was 35.'))
+console.log(addArtist(artists))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
